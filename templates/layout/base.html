@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio : Keveen</title>
+    <link rel="icon" href="{% static 'img/logo2.png' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'bootstrap-5.3.0/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'fontawesome-free-6.4.0-web/css/all.css' %}">
+    <link rel="stylesheet" href="{% static 'Aos/aos.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+<body>
+    {% include 'layout/header.html' %}
+
+    
+    {% block container %}
+        
+    {% endblock container %}
+        
+    {% include "layout/footer.html" %}
+
+    <script src="{% static 'bootstrap-5.3.0/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}" ></script>
+    <script src="{% static 'js/jquery.animateNumber.min.js' %}" ></script>
+    <script src="{% static 'js/jquery.min.js' %}" ></script>
+    <script src="{% static 'Aos/aos.js' %}"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

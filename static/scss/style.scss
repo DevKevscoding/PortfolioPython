@@ -1,0 +1,66 @@
+@import 'mixin';
+
+$font-primary: 'Poppins',Arial, sans-serif;
+
+body{
+    font-family: $font-primary;
+    background-color: $black !important;
+    header{
+        @include link_style();
+    }
+    main{
+        #servicePage{
+            div{
+                div{
+                    #cardServices{
+                        cursor:  pointer;
+                        transition: 1s all;
+                        background-color: $darken;
+                        i{
+                            color: $primary;
+                        }
+                        h4{
+                            color: $white;
+                        }
+                        &:hover{
+                            transition:  1s all;
+                            background-color: $primary;
+                            i{
+                                color: $white;
+                            }
+                            h4{
+                                color: $black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #SectionProverbe{
+            background-image: url('../img/img1.png') !important;
+            background-position: center;
+            background-size: cover;
+        }
+        #projectPage{
+            div{
+                div{
+                    div{
+                        background-color: transparent;
+                        transition: 1s all;
+                        &:hover{
+                            transition: 1s all;
+                            background-color: $primary !important;
+                            opacity: 0.9 !important;
+                            h5{
+                                transition: 1s all;
+                                color:  white !important;
+                                opacity: 1 !important;
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}
